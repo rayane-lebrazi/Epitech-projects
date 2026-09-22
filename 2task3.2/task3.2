@@ -1,0 +1,16 @@
+def sum_digits(number):
+    result = 0
+
+    while number != 0:
+        result = result + number % 10
+        number = number // 10
+
+    return result
+
+
+numbers = [123456789, 112233445566778899, 123456789 * 987654321]
+
+for number in numbers:
+    print(number)
+    print(sum_digits(number))
+
