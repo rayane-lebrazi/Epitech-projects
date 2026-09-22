@@ -1,0 +1,12 @@
+pi = 0
+numer = 1
+denumer = 1
+
+for i in range(10000000):
+    pi += numer / denumer
+    numer = -numer
+    denumer += 2
+
+pi *= 4
+
+print(f"{pi:.6f}")
