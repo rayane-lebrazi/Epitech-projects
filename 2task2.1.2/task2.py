@@ -1,0 +1,13 @@
+num = 111111111
+result = 0
+
+while num != 0:
+    result = result + num
+    num = num // 10
+
+print(result)
+print(result ** 2)
+print(result ** 3)
+print(result ** 4)
+print(result ** 5)
+
