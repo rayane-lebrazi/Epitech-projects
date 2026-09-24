@@ -16,5 +16,4 @@ def cipher(string, number):
 
     return result
 
-
 print("Your decrypted text is the following:\n", cipher(string, number))
