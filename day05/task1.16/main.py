@@ -1,2 +1,11 @@
-print([x // 2 if x % 2 == 0 else x * 2 for x in [42, 3, 4, 18, 3, 10]])
-#this code means that if the number is even do ground division else multiply it by 2
+my_list = [1, 1, 1, 1, 2, 2, 2, 2, 2]
+
+my_list = list(set(my_list))
+
+print(my_list)
+#deuxieme liste
+my_list = [42, '42', 42.0, 21+21, 42*10/10]
+
+my_list = list(set(my_list))
+
+print(my_list)
