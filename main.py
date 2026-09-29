@@ -10,4 +10,4 @@ def list_directory(path):
             list_directory(full_path)
 
 
-list_directory("Epitech-")
+list_directory(".")

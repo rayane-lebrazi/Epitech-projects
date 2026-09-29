@@ -14,14 +14,14 @@ def power(number, exponent):
 
 
 start = time.time()
-power(4, 284)
+print(power(2, 3))
 end = time.time()
 
 print("Time for 4^284:", end - start, "seconds")
 
 
 start = time.time()
-power(4, 2168)
+print(power(42, 168))
 end = time.time()
 
 print("Time for 4^2168:", end - start, "seconds")
