@@ -1,0 +1,37 @@
+Import the library where the words are random
+
+Create an unknown version of the word
+using "_" for every letter
+
+Set penalties to 0
+
+WHILE penalties are less than 12:
+
+    Display the unknown word '_'
+    Display the number of penalties for each ittiration
+
+    Ask the player for a letter or a complete word
+
+    IF the player entered a letter:
+
+        IF the letter is in the word:
+            Reveal every occurrence of the letter
+        ELSE:
+            Add 1 penalty
+
+    ELSE IF the player entered a complete word:
+
+        IF the word is correct:
+            The player wins
+            STOP (exit)
+        ELSE:
+            Add 5 penalties
+
+    IF the complete word has been revealed:
+        The player wins
+        STOP (exit)
+
+IF penalties reach 12:
+    The player loses
+
+END
