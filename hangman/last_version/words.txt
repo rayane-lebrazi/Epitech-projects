@@ -1,0 +1,16 @@
+computer
+python
+keyboard
+monitor
+internet
+program
+software
+hardware
+algorithm
+function
+variable
+terminal
+network
+database
+website
+developer
