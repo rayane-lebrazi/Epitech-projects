@@ -5,11 +5,11 @@ def read_lines(*numbers):
 
         for number in numbers:
             if type(number) is not int:
-                print("Erreur : les numéros doivent être des entiers.")
+                print("The numbers are supposde to be int.")
                 return
 
             if number < 1 or number > len(lines):
-                print("Erreur : la ligne", number, "n'existe pas.")
+                print("the line ", number, "doesnt exist.")
                 return
 
         for number in numbers:
