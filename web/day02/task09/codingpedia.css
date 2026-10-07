@@ -1,0 +1,160 @@
+body {
+  background-color: #777;
+  color: #111;
+  font-family: Georgia, serif;
+  font-size: 14px;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 8px;
+  background-color: #888;
+  border-radius: 0 0 18px 18px;
+}
+
+.box {
+  background-color: white;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 22px;
+  margin: 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  font-size: 11px;
+}
+
+.content {
+  display: flex;
+  align-items: stretch;
+}
+
+main {
+  flex: 4;
+  min-width: 0;
+}
+
+aside {
+  flex: 1;
+}
+
+.description {
+  font-size: 11px;
+  padding: 6px;
+}
+
+form {
+  font-size: 11px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+input:not([type="radio"]):not([type="color"]), select, textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="color"] {
+  width: 35px;
+  height: 22px;
+}
+
+fieldset.form-row {
+  border: 0;
+  padding: 0;
+}
+
+fieldset legend {
+  float: left;
+  width: calc(33.333% - 5px);
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  min-height: 35px;
+}
+
+button {
+  width: 66.6%;
+  margin-left: 33.3%;
+}
+
+article.box {
+  padding: 8px;
+}
+
+article h2 {
+  margin-top: 2px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td, caption {
+  border: 1px solid #555;
+  padding: 6px;
+  text-align: left;
+}
+
+pre {
+  overflow-x: auto;
+  background-color: #eee;
+  padding: 8px;
+}
+
+footer {
+  text-align: center;
+  font-size: 11px;
+}
+
+address {
+  font-style: italic;
+}
+
+.moving_square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: move-square 5s 5;
+}
+
+@keyframes move-square {
+  0%, 100% { transform: translate(0, 0); background-color: red; }
+  25% { transform: translate(0, 300px); background-color: green; }
+  50% { transform: translate(300px, 300px); background-color: blue; }
+  75% { transform: translate(300px, 0); background-color: yellow; }
+}
+
+@media (max-width: 650px) {
+  .content { flex-direction: column; }
+  header { grid-template-columns: 1fr; }
+  nav { justify-content: flex-start; gap: 15px; }
+  .form-row { grid-template-columns: 1fr; }
+  fieldset legend { float: none; width: auto; }
+  button { width: 100%; margin-left: 0; }
+}

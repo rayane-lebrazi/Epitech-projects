@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodingPedia</title>
+  <link rel="stylesheet" href="codingpedia.css">
+</head>
+<body>
+  <div class="page box">
+    <header class="box">
+      <h1>Welcome to CodingPedia!</h1>
+      <nav class="box" aria-label="Main navigation">
+        <a href="index.html">Index</a>
+        <a href="php.html">PHP</a>
+        <a href="sql.html">SQL</a>
+      </nav>
+    </header>
+    <div class="content">
+      <main class="box">
+        <p class="description box">CodingPedia is a collective encyclopedia project on the Internet aiming to be universal and multi-lingual which functions as a wiki.<br>CodingPedia has for goal to offer freely reusable objective and verifiable content that anyone can modify and improve.</p>
+        <form action="#" method="get">
+          <div class="form-row"><label for="first-name">First name:</label><input id="first-name" name="first-name" type="text" required></div>
+          <div class="form-row"><label for="last-name">Last name:</label><input id="last-name" name="last-name" type="text" required></div>
+          <div class="form-row"><label for="email">Email:</label><input id="email" name="email" type="email" required></div>
+          <div class="form-row"><label for="age">Age:</label><input id="age" name="age" type="number" min="3" max="99"></div>
+          <div class="form-row"><label for="phone">Phone number:</label><input id="phone" name="phone" type="tel" pattern="[0-9]{10}" maxlength="10"></div>
+          <fieldset class="form-row"><legend>Sex:</legend><div class="choices"><label><input type="radio" name="sex" value="male" checked> Male</label><label><input type="radio" name="sex" value="female"> Female</label></div></fieldset>
+          <div class="form-row"><label for="hair">Hair color:</label><input id="hair" name="hair" type="color"></div>
+          <div class="form-row"><label for="date">Date:</label><input id="date" name="date" type="date" required></div>
+          <div class="form-row"><label for="technology">Technology:</label><select id="technology" name="technology"><option>HTML</option><option>PHP</option><option>SQL</option></select></div>
+          <div class="form-row"><label for="question">Question:</label><textarea id="question" name="question" required></textarea></div>
+          <button type="submit">Submit</button>
+        </form>
+        <div class="moving_square" aria-hidden="true"></div>
+      </main>
+      <aside class="box"><p>Hello there! I am Rayane Lebrazi, an engineering student interested in programming, cars, and hands-on projects.</p></aside>
+    </div>
+    <footer class="box"><address>Rayane Lebrazi · Address: To be completed · Phone: +33 746327767</address></footer>
+  </div>
+</body>
+</html>
