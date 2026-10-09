@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A mechanical troubleshooting game by Rayane Lebrazi.">
+  <title>Mechanical Diagnosis | Rayane Lebrazi</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./activities.js" defer></script>
+  <script src="./site-nav.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./index.html">RL<span>.</span></a>
+    <nav aria-label="Main navigation"><a href="./index.html">About me</a><a href="./contact.html">Contact me</a></nav>
+    <a class="header-avatar" href="./index.html#about" aria-label="Back to Rayane's introduction"><img src="./rayane-photo.png" alt=""></a>
+  </header>
+  <main class="activity-page">
+    <a class="back-link" href="./car.html">← Back to the workshop</a>
+    <p class="eyebrow">Workshop challenge · Troubleshooting</p>
+    <h1 class="activity-title">Find the fault<span>.</span></h1>
+    <p class="activity-intro">Read the symptoms, choose the most likely cause, and work through three quick mechanical cases.</p>
+    <section class="diagnostic-panel" id="diagnosis">
+      <div class="diagnostic-top"><span id="case-number">CASE 01 / 03</span><span class="diagnostic-status">SYSTEM CHECK</span></div>
+      <div class="diagnostic-icon" id="diagnostic-icon">🔋</div>
+      <p class="eyebrow" id="case-category">Starting system</p>
+      <h2 id="case-title">The engine won’t crank</h2>
+      <p class="case-symptom" id="case-symptom">The dashboard lights are dim, and you hear a rapid clicking sound when turning the key.</p>
+      <div class="diagnostic-options" id="diagnostic-options"></div>
+      <p class="game-result" id="diagnostic-result" aria-live="polite">What would you check first?</p>
+      <button class="game-button" id="next-case" type="button" hidden>Next case</button>
+      <p class="game-score">Solved <strong id="diagnostic-score">0</strong> <span>·</span> Completed <strong id="diagnostic-completed">0</strong></p>
+    </section>
+  </main>
+  <footer><a class="brand" href="./index.html">RL<span>.</span></a><p>Built with curiosity by Rayane Lebrazi</p><a href="./contact.html">Say hello ↗</a></footer>
+</body>
+</html>
+
+

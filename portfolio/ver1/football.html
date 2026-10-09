@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rayane's football page and free-kick game.">
+  <title>Football | Rayane Lebrazi</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./activities.js" defer></script>
+  <script src="./site-nav.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./index.html">RL<span>.</span></a>
+    <nav aria-label="Main navigation"><a href="./index.html">About me</a><a href="./contact.html">Contact me</a></nav>
+    <a class="header-avatar" href="./index.html#about" aria-label="Back to Rayane's introduction"><img src="./rayane-photo.png" alt=""></a>
+  </header>
+  <main class="activity-page">
+    <a class="back-link" href="./index.html#story">← Back to Play. Build. Repeat.</a>
+    <p class="eyebrow">On the pitch</p>
+    <h1 class="activity-title">Football<span>.</span></h1>
+    <p class="activity-intro">A little space for my game, with a free kick to take while you’re here.</p>
+    <section class="football-feature" id="football-photo">
+      <div class="football-photo-slot">
+        <img class="football-action-photo" id="football-action-photo" src="./rayane-football.jpg" alt="Rayane playing football" hidden>
+        <div class="photo-placeholder" id="football-photo-placeholder"><div class="photo-placeholder-mark">⚽</div><p>Add a photo of me playing football</p><small>Save it in this folder as <code>rayane-football.jpg</code></small></div>
+      </div>
+      <div class="football-caption"><p class="eyebrow">Match day</p><h2>Good games are built on good teamwork.</h2><p>Football is one of my favorite ways to compete, think quickly, and have fun with a team.</p></div>
+    </section>
+    <section class="game-panel" id="free-kick">
+      <p class="eyebrow">Mini game · Free kick</p>
+      <h2>Beat the wall. Find the net.</h2>
+      <p>Choose where to aim, then take your shot. The keeper moves every time.</p>
+      <div class="football-pitch" aria-label="Football free kick game">
+        <div class="goal"><div class="goal-net"></div><div class="keeper" id="keeper"></div></div>
+        <div class="wall"><span></span><span></span><span></span></div>
+        <div class="ball" id="football-ball">⚽</div>
+      </div>
+      <label class="game-label" for="football-aim">Aim across the goal</label>
+      <input id="football-aim" class="game-range" type="range" min="0" max="100" value="50">
+      <button class="game-button" id="football-shoot" type="button">Take the shot</button>
+      <p class="game-result" id="football-result" aria-live="polite">Ready when you are.</p>
+      <p class="game-score">Goals <strong id="football-score">0</strong> <span>·</span> Shots <strong id="football-shots">0</strong></p>
+    </section>
+  </main>
+  <footer><a class="brand" href="./index.html">RL<span>.</span></a><p>Built with curiosity by Rayane Lebrazi</p><a href="./contact.html">Say hello ↗</a></footer>
+</body>
+</html>
+
+
+
+
+

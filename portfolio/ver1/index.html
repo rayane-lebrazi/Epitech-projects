@@ -7,6 +7,7 @@
   <title>Rayane Lebrazi | Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <script src="./site-nav.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -15,6 +16,7 @@
       <a class="active" aria-current="page" href="./index.html">About me</a>
       <a href="./contact.html">Contact me</a>
     </nav>
+    <a class="header-avatar" href="./index.html#about" aria-label="Back to Rayane's introduction"><img src="./rayane-photo.png" alt=""></a>
   </header>
 
   <main>
@@ -32,13 +34,22 @@
     <section class="content-section" id="story">
       <p class="eyebrow">A little about me</p>
       <h2>Hands-on by nature.<br><span>Curious by default.</span></h2>
-      <div class="story-grid">
-        <p>I’m Rayane Lebrazi, and I’m interested in all kinds of engineering—from programming and engines to practical, hands-on work. I love working on cars and figuring out how things fit together.</p>
-        <p>I’d rather spend hours finding a way to automate a task than do the task over and over. I also love to write, whether that means a long snippet of code or journaling about my life.</p>
+      <div class="story-layout">
+        <div class="story-illustration" role="img" aria-label="Illustration of a hands-on engineering workshop">
+          <div class="illustration-orbit orbit-one"></div>
+          <div class="illustration-orbit orbit-two"></div>
+          <div class="illustration-gear">⚙</div>
+          <div class="illustration-chip">ARDUINO<br><span>INPUT → IDEAS → BUILD</span></div>
+          <div class="illustration-caption">HANDS-ON / ALWAYS LEARNING</div>
+        </div>
+        <div class="story-grid">
+          <p>I’m Rayane Lebrazi, and I’m interested in all kinds of engineering—from programming and engines to practical, hands-on work. I love working on cars and figuring out how things fit together.</p>
+          <p>I’d rather spend hours finding a way to automate a task than do the task over and over. I also love to write, whether that means a long snippet of code or journaling about my life.</p>
+        </div>
       </div>
     </section>
 
-    <section class="feature-section">
+    <section class="feature-section" id="project">
       <div class="feature-number">01</div>
       <div>
         <p class="eyebrow">A project I’m proud of</p>
@@ -47,27 +58,33 @@
       </div>
     </section>
 
-    <section class="content-section two-column">
+    <section class="content-section two-column" id="activities">
       <div>
         <p class="eyebrow">Outside the workshop</p>
         <h2>Play. Build.<br><span>Repeat.</span></h2>
       </div>
       <div>
         <p>When I’m not working on a project, you’ll often find me playing football or basketball, spending time with my car, or writing down whatever is on my mind.</p>
-        <div class="tags"><span>Football</span><span>Basketball</span><span>Cars</span><span>Writing</span></div>
+        <div class="activity-links">
+          <a class="activity-card" href="./football.html"><span class="activity-icon">⚽</span><span><strong>Football</strong><small>See the pitch and try a free kick</small></span><span class="activity-arrow">↗</span></a>
+          <a class="activity-card" href="./basketball.html"><span class="activity-icon">🏀</span><span><strong>Basketball</strong><small>Take a shot at the hoop</small></span><span class="activity-arrow">↗</span></a>
+          <a class="activity-card" href="./car.html"><span class="activity-icon">⚙</span><span><strong>My car</strong><small>Enter the workshop</small></span><span class="activity-arrow">↗</span></a>
+          <a class="activity-card" href="./writing.html"><span class="activity-icon">&gt;_</span><span><strong>Writing &amp; code</strong><small>Open my digital notebook</small></span><span class="activity-arrow">↗</span></a>
+          <a class="activity-card" href="./mechanical-game.html"><span class="activity-icon">🔧</span><span><strong>Mechanical challenge</strong><small>Diagnose the problem</small></span><span class="activity-arrow">↗</span></a>
+        </div>
       </div>
     </section>
 
     <section class="career-section" id="career">
       <p class="eyebrow">Learning and growing</p>
-      <h1>My academique career</h1>
+      <h1>My Academic Career</h1>
       <div class="timeline">
-        <article><span class="timeline-dot"></span><p class="timeline-date">Current · Third year</p><h2>Epitech International</h2><p>Exchange student, currently in my third year.</p></article>
-        <article><span class="timeline-dot"></span><p class="timeline-date">Previous · Two years</p><h2>EMSI Fès</h2><p>Completed two years in the preparatory cycle.</p></article>
+        <article><span class="timeline-dot"></span><p class="timeline-date">Current · Third year</p><h2><a class="school-location" href="https://international.epitech.eu/" target="_blank" rel="noopener">Epitech International <span aria-hidden="true">↗</span></a></h2><p>Exchange student in my third year at Epitech International. Studying alongside people from different backgrounds has helped me become more independent, work through problems step by step, and broaden my perspective.</p></article>
+        <article><span class="timeline-dot"></span><p class="timeline-date">Previous · Two years</p><h2><a class="school-location" href="https://emsi.ma/" target="_blank" rel="noopener">EMSI Fès <span aria-hidden="true">↗</span></a></h2><p>Completed a two-year preparatory cycle at EMSI Fès, where I built a foundation in engineering and programming. I gained experience with:</p><ul class="skill-tags"><li>Python</li><li>JavaScript</li><li>C / C++</li><li>HTML</li><li>CSS</li></ul></article>
       </div>
     </section>
 
-    <section class="cv-strip">
+    <section class="cv-strip" id="cv">
       <div><p class="eyebrow">Want the details?</p><h2>Take a look at my CV.</h2></div>
       <a class="button button-light" href="./CV.pdf" target="_blank" rel="noopener">Open my CV <span aria-hidden="true">↗</span></a>
     </section>
@@ -75,6 +92,13 @@
   <footer><a class="brand" href="./index.html">RL<span>.</span></a><p>Built with curiosity by Rayane Lebrazi</p><a href="./contact.html">Say hello ↗</a></footer>
 </body>
 </html>
+
+
+
+
+
+
+
 
 
 

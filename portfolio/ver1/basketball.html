@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rayane's basketball shooting game.">
+  <title>Basketball | Rayane Lebrazi</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./activities.js" defer></script>
+  <script src="./site-nav.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./index.html">RL<span>.</span></a>
+    <nav aria-label="Main navigation"><a href="./index.html">About me</a><a href="./contact.html">Contact me</a></nav>
+    <a class="header-avatar" href="./index.html#about" aria-label="Back to Rayane's introduction"><img src="./rayane-photo.png" alt=""></a>
+  </header>
+  <main class="activity-page">
+    <a class="back-link" href="./index.html#story">← Back to Play. Build. Repeat.</a>
+    <p class="eyebrow">At the court</p>
+    <h1 class="activity-title">Basketball<span>.</span></h1>
+    <p class="activity-intro">Pick your angle and see if you can build a streak from the free-throw line.</p>
+    <section class="game-panel basketball-panel" id="free-throws">
+      <p class="eyebrow">Mini game · Free throws</p>
+      <h2>Find your shot.</h2>
+      <p>Move the aim into the green zone and shoot. Keep your streak alive.</p>
+      <div class="basketball-court" aria-label="Basketball hoop shooting game">
+        <div class="backboard"></div>
+        <div class="hoop"><span></span></div>
+        <div class="shot-mark" id="shot-mark">🏀</div>
+        <div class="court-line"></div>
+      </div>
+      <label class="game-label" for="basketball-aim">Shot angle <strong id="basketball-aim-value">50</strong></label>
+      <input id="basketball-aim" class="game-range" type="range" min="0" max="100" value="50">
+      <div class="aim-guide"><span>Left</span><span>Sweet spot: 42–58</span><span>Right</span></div>
+      <button class="game-button" id="basketball-shoot" type="button">Shoot</button>
+      <p class="game-result" id="basketball-result" aria-live="polite">You’re up. Take your shot!</p>
+      <p class="game-score">Points <strong id="basketball-score">0</strong> <span>·</span> Streak <strong id="basketball-streak">0</strong></p>
+    </section>
+  </main>
+  <footer><a class="brand" href="./index.html">RL<span>.</span></a><p>Built with curiosity by Rayane Lebrazi</p><a href="./contact.html">Say hello ↗</a></footer>
+</body>
+</html>
+
+
