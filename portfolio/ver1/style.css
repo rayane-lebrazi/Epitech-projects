@@ -149,3 +149,38 @@ footer{padding:28px 7vw;display:flex;align-items:center;justify-content:space-be
 .skill-tags li{padding:.38rem .65rem;border:1px solid #665079;border-radius:99px;background:#2d233a;color:var(--green);font: .68rem 'DM Mono',monospace}
 @media(max-width:800px){.story-layout{grid-template-columns:1fr}.story-illustration{height:280px;max-width:440px;width:100%;margin:0 auto}.timeline{grid-template-columns:1fr}}
 @media(max-width:700px){.site-header{gap:.65rem}.site-header nav{margin-left:auto}.site-header.has-scrolled .header-avatar{flex-basis:34px;width:34px;margin-left:.25rem}.header-avatar{height:34px}.header-avatar img{height:32px;width:32px}}
+.story-photo{display:flex;flex-direction:column;margin:0;height:auto;min-height:350px;background:var(--surface);border:1px solid var(--line);box-shadow:12px 12px 0 rgba(111,66,193,.2)}
+.story-photo img{display:block;width:100%;height:300px;object-fit:cover;object-position:center}
+.story-photo figcaption,.project-media figcaption,.football-photo-slot figcaption,.football-gallery figcaption,.video-gallery figcaption{padding:.7rem .9rem;color:var(--muted);font:.66rem 'DM Mono',monospace;letter-spacing:.04em}
+.project-media{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem}
+.project-media figure,.football-photo-slot,.football-gallery figure,.video-gallery figure{margin:0;overflow:hidden;border:1px solid var(--line);border-radius:8px;background:#17121f}
+.project-media img,.project-media video,.football-photo-slot img,.football-gallery img,.video-gallery video{display:block;width:100%;height:240px;object-fit:cover}
+.project-media video,.video-gallery video{background:#100d16}
+.football-photo-slot{display:block;min-height:0;padding:0;border-style:solid}
+.football-photo-slot img{height:360px;object-position:center 45%}
+.football-gallery{margin:0 0 2rem;max-width:440px}
+.football-gallery img{height:300px;object-position:center 35%}
+.workshop-visual{height:205px;margin:0;display:block;overflow:hidden;position:relative;border:0;border-radius:6px;background:#17121f}
+.workshop-visual img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .35s}
+.workshop-card:hover .workshop-visual img{transform:scale(1.04)}
+.workshop-visual:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(12,9,16,.82))}
+.workshop-visual figcaption{position:absolute;z-index:1;left:12px;bottom:10px;color:white;font: .62rem 'DM Mono',monospace;letter-spacing:.1em}
+.video-gallery{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem}
+.video-gallery video{height:260px}
+@media(max-width:700px){.story-photo img{height:250px}.project-media,.video-gallery{grid-template-columns:1fr}.football-photo-slot img{height:300px}.workshop-visual{height:230px}}
+.story-photo:before{display:none}.workshop-visual:before,.workshop-visual:after{width:auto;height:auto;border:0;border-radius:0}.workshop-visual:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(12,9,16,.82))}.video-gallery{grid-template-columns:1fr;max-width:700px}
+.story-photo{min-height:0;align-items:stretch}
+.story-photo img{width:100%;height:auto;max-height:520px;object-fit:contain;background:#100d16}
+.project-media figure{display:flex;flex-direction:column}
+.project-media img,.project-media video{height:370px;object-fit:contain;background:#100d16}
+.football-photo-slot img{width:100%;height:auto;max-height:600px;object-fit:contain;background:#100d16}
+.football-gallery{max-width:600px}
+.football-gallery img{width:100%;height:auto;max-height:560px;object-fit:contain;background:#100d16}
+.workshop-visual{height:auto;aspect-ratio:3/4;background:#100d16}
+.workshop-visual img{height:100%;object-fit:contain;background:#100d16}
+.video-gallery video{height:380px;object-fit:contain;background:#100d16}
+.video-fullscreen-button{display:block;width:100%;padding:.7rem .9rem;border:0;border-top:1px solid var(--line);background:#211a2c;color:var(--green);text-align:left;font:500 .72rem 'DM Mono',monospace;cursor:pointer}
+.video-fullscreen-button:hover{background:#39254d;color:white}
+@media(max-width:700px){.story-photo img{max-height:480px}.project-media img,.project-media video{height:320px}.football-photo-slot img{max-height:540px}.football-gallery img{max-height:520px}.workshop-visual{aspect-ratio:4/5}.video-gallery video{height:320px}}
+.portrait{height:auto;aspect-ratio:2/3}.portrait img{object-fit:contain;object-position:center;background:#100d16}
+.football-photo-slot img{height:460px;max-height:none;object-fit:cover;object-position:center bottom}.football-gallery img{object-fit:contain}

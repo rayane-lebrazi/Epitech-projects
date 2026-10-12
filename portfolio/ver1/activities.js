@@ -1,3 +1,20 @@
+document.querySelectorAll(".video-fullscreen-button").forEach(button => {
+  const video = document.getElementById(button.dataset.videoId);
+  button.addEventListener("click", async () => {
+    if (!video) return;
+    try {
+      if (document.fullscreenElement === video) {
+        await document.exitFullscreen();
+      } else if (video.requestFullscreen) {
+        await video.requestFullscreen();
+      } else if (video.webkitEnterFullscreen) {
+        video.webkitEnterFullscreen();
+      }
+    } catch {
+      button.textContent = "Use the video controls to expand";
+    }
+  });
+});
 const footballActionPhoto = document.querySelector("#football-action-photo");
 if (footballActionPhoto) {
   const showFootballPhoto = () => {
@@ -185,4 +202,5 @@ if (optionsContainer) {
     renderCase();
   });
 }
+
 
