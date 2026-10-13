@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 13 - Filter items</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>My items</h1>
+    <form id="itemForm">
+      <label for="itemText">New item</label><input id="itemText" type="text" required>
+      <label for="itemType">Type</label><select id="itemType"><option value="note">Note</option><option value="email">Email</option><option value="todo">Todo</option></select>
+      <button type="submit">Add item</button>
+    </form>
+    <form id="filterForm">
+      <label for="typeFilter">Show type</label><select id="typeFilter"><option value="all">All types</option><option value="note">Note</option><option value="email">Email</option><option value="todo">Todo</option></select>
+      <button type="submit">Search</button><button type="reset">Reset</button>
+    </form>
+    <ul id="itemList"></ul>
+  </main>
+</body>
+</html>
