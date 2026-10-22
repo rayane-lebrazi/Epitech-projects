@@ -1,30 +1,35 @@
-const canvas = document.querySelector("canvas");
-const context = canvas.getContext("2d");
 
-context.beginPath();
-context.moveTo(6, 6);
-context.lineTo(14, 10);
-context.lineTo(6, 14);
-context.closePath();
-context.strokeStyle = "white";
-context.lineWidth = 1;
-context.stroke();
+const audio = document.getElementById("audio");
+const playButton = document.getElementById("play");
+const pauseButton = document.getElementById("pause");
+const stopButton = document.getElementById("stop");
+const status = document.getElementById("status");
 
-const audio = document.querySelector("audio");
-audio.src = "https://universal-soundbank.com/sounds/13631.mp3";
+playButton.addEventListener("click", async () => {
+    console.log("Play clicked");
 
-const controls = audio.parentElement;
-const buttons = controls.querySelectorAll("button");
-const playButton = document.createElement("button");
-playButton.textContent = "Play";
-controls.insertBefore(playButton, buttons[0]);
-
-playButton.addEventListener("click", () => {
-  audio.play().catch((error) => console.error("Audio could not be played:", error));
+    try {
+        await audio.play();
+        status.textContent = "Playing";
+    } catch (error) {
+        console.error("Playback error:", error);
+        status.textContent = "Error playing audio";
+    }
 });
 
-buttons[0].addEventListener("click", () => audio.pause());
-buttons[1].addEventListener("click", () => {
-  audio.pause();
-  audio.currentTime = 0;
+pauseButton.addEventListener("click", () => {
+    audio.pause();
+    status.textContent = "Paused";
+    console.log("Pause clicked");
+});
+
+stopButton.addEventListener("click", () => {
+    audio.pause();
+    audio.currentTime = 0;
+    status.textContent = "Stopped";
+    console.log("Stop clicked");
+});
+
+audio.addEventListener("ended", () => {
+    status.textContent = "Finished";
 });

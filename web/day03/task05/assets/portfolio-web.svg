@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="title">
+  <title id="title">Responsive web layout</title>
+  <rect width="800" height="460" fill="#e4f2f1"/>
+  <rect x="90" y="70" width="620" height="320" rx="18" fill="#fff"/>
+  <rect x="90" y="70" width="620" height="56" rx="18" fill="#126a73"/>
+  <circle cx="125" cy="98" r="9" fill="#f5c85c"/><circle cx="155" cy="98" r="9" fill="#f28b82"/><circle cx="185" cy="98" r="9" fill="#8fd4bc"/>
+  <rect x="130" y="165" width="250" height="190" rx="12" fill="#9ee062"/>
+  <rect x="410" y="165" width="250" height="82" rx="12" fill="#67b3dd"/>
+  <rect x="410" y="273" width="112" height="82" rx="12" fill="#fedf6b"/><rect x="548" y="273" width="112" height="82" rx="12" fill="#f03db5"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="title">
+  <title id="title">Arduino traffic-light project</title>
+  <rect width="800" height="460" fill="#e8edf5"/>
+  <rect x="225" y="48" width="350" height="364" rx="34" fill="#26334a"/>
+  <circle cx="400" cy="125" r="48" fill="#fc302d"/><circle cx="400" cy="230" r="48" fill="#fedf6b"/><circle cx="400" cy="335" r="48" fill="#9ee062"/>
+  <path d="M142 365h76M581 365h76M180 365v44M620 365v44" stroke="#126a73" stroke-width="14" stroke-linecap="round"/>
+</svg>

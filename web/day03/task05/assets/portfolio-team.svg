@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="title">
+  <title id="title">Team and media work</title>
+  <rect width="800" height="460" fill="#fff0e5"/>
+  <circle cx="245" cy="195" r="72" fill="#67b3dd"/><circle cx="400" cy="170" r="78" fill="#f03db5"/><circle cx="555" cy="195" r="72" fill="#9ee062"/>
+  <path d="M130 355c10-81 53-119 115-119s105 38 115 119M277 355c10-91 55-135 123-135s113 44 123 135M440 355c10-81 53-119 115-119s105 38 115 119" fill="#126a73"/>
+  <rect x="235" y="385" width="330" height="18" rx="9" fill="#f5c85c"/>
+</svg>

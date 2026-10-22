@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="title">
+  <title id="title">Rotaract humanitarian media activities</title>
+  <rect width="800" height="460" fill="#eaf6ef"/>
+  <circle cx="400" cy="215" r="132" fill="#9ee062"/>
+  <path d="M400 298s-112-69-112-139c0-51 66-70 112-21 46-49 112-30 112 21 0 70-112 139-112 139Z" fill="#fc302d"/>
+  <rect x="182" y="344" width="436" height="24" rx="12" fill="#126a73"/>
+  <circle cx="240" cy="125" r="18" fill="#67b3dd"/><circle cx="565" cy="133" r="18" fill="#f03db5"/>
+</svg>

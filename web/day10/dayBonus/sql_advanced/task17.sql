@@ -1,0 +1,1 @@
+UPDATE movies SET producer_id = (SELECT p.id FROM producers AS p LEFT JOIN movies AS pm ON pm.producer_id = p.id WHERE LOWER(p.name) LIKE '%film' GROUP BY p.id ORDER BY COUNT(pm.id) ASC, p.id ASC LIMIT 1) WHERE producer_id IS NULL;

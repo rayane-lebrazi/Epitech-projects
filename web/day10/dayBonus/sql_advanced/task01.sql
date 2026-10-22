@@ -1,0 +1,1 @@
+SELECT COUNT(*) AS "Number of members", ROUND(AVG(CAST(strftime('%Y', 'now') AS INTEGER) - CAST(strftime('%Y', p.birthdate) AS INTEGER) - (strftime('%m-%d', 'now') < strftime('%m-%d', p.birthdate))), 0) AS "Average age" FROM member AS m JOIN profiles AS p ON p.id = m.profile_id;

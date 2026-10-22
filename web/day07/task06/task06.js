@@ -1,38 +1,35 @@
-const square = document.querySelector(".exercice canvas");
-const box = square.parentElement;
-const coordinates = document.querySelector(".exercice footer div:nth-child(2)");
-
-box.style.position = "relative";
-square.style.position = "absolute";
-square.style.touchAction = "none";
-
-let x = Math.max(0, Math.round((box.clientWidth - square.offsetWidth) / 2));
-let y = Math.max(0, Math.round((box.clientHeight - square.offsetHeight) / 2));
-let dragOffsetX = 0;
-let dragOffsetY = 0;
-
-function showPosition() {
+const square = document.querySelector('canvas');
+const area = square.parentElement;
+const coordinates = document.querySelectorAll('footer > div')[1];
+area.style.position = 'relative';
+const initialArea = area.getBoundingClientRect();
+const initialSquare = square.getBoundingClientRect();
+let x = initialSquare.left - initialArea.left - area.clientLeft;
+let y = initialSquare.top - initialArea.top - area.clientTop;
+Object.assign(square.style, { position: 'absolute', margin: '0', touchAction: 'none', cursor: 'grab' });
+function render() {
   square.style.left = `${x}px`;
   square.style.top = `${y}px`;
-  coordinates.textContent = `New coordinates => {x:${x}, y:${y}}`;
+  coordinates.textContent = `New coordinates => {x:${Math.round(x)}, y:${Math.round(y)}}`;
 }
-
-square.addEventListener("pointerdown", (event) => {
-  const squareRect = square.getBoundingClientRect();
-  dragOffsetX = event.clientX - squareRect.left;
-  dragOffsetY = event.clientY - squareRect.top;
+render();
+let drag = null;
+square.addEventListener('pointerdown', (event) => {
+  if (event.button !== 0) return;
+  event.preventDefault();
+  const rect = square.getBoundingClientRect();
+  drag = { id: event.pointerId, offsetX: event.clientX - rect.left, offsetY: event.clientY - rect.top };
   square.setPointerCapture(event.pointerId);
+  square.style.cursor = 'grabbing';
 });
-
-square.addEventListener("pointermove", (event) => {
-  if (!square.hasPointerCapture(event.pointerId)) return;
-
-  const boxRect = box.getBoundingClientRect();
-  const maxX = Math.max(0, box.clientWidth - square.offsetWidth);
-  const maxY = Math.max(0, box.clientHeight - square.offsetHeight);
-  x = Math.round(Math.min(maxX, Math.max(0, event.clientX - boxRect.left - dragOffsetX)));
-  y = Math.round(Math.min(maxY, Math.max(0, event.clientY - boxRect.top - dragOffsetY)));
-  showPosition();
+square.addEventListener('pointermove', (event) => {
+  if (!drag || drag.id !== event.pointerId) return;
+  const rect = area.getBoundingClientRect();
+  x = Math.max(0, Math.min(area.clientWidth - square.offsetWidth, event.clientX - rect.left - area.clientLeft - drag.offsetX));
+  y = Math.max(0, Math.min(area.clientHeight - square.offsetHeight, event.clientY - rect.top - area.clientTop - drag.offsetY));
+  render();
 });
-
-showPosition();
+function finish() { drag = null; square.style.cursor = 'grab'; }
+square.addEventListener('pointerup', finish);
+square.addEventListener('pointercancel', finish);
+square.addEventListener('lostpointercapture', finish);

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Rayane Lebrazi — CV</title>
+  <style>
+    :root {
+      --ink: #17243b;
+      --muted: #59677b;
+      --accent: #126a73;
+      --accent-light: #e5f2f1;
+      --line: #dce4e9;
+      --paper: #fff;
+      --canvas: #edf1f4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 34px 18px;
+      background: var(--canvas);
+      color: var(--ink);
+      font: 15px/1.55 "Segoe UI", Arial, sans-serif;
+    }
+    .cv {
+      display: grid;
+      grid-template-columns: 270px minmax(0, 1fr);
+      max-width: 1020px;
+      min-height: 1120px;
+      margin: 0 auto;
+      overflow: hidden;
+      background: var(--paper);
+      box-shadow: 0 18px 55px #17243b1a;
+    }
+    aside {
+      padding: 48px 28px;
+      background: #f4f8f8;
+      border-right: 1px solid var(--line);
+    }
+    main { padding: 50px 54px 56px; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      margin-bottom: 8px;
+      font-size: clamp(2rem, 4vw, 2.65rem);
+      letter-spacing: -.04em;
+      line-height: 1.06;
+    }
+    .eyebrow {
+      margin-bottom: 24px;
+      color: var(--accent);
+      font-size: .76rem;
+      font-weight: 750;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .portrait {
+      display: block;
+      width: 106px;
+      height: 159px;
+      margin: 0 0 28px;
+      border: 3px solid #fff;
+      border-radius: 14px;
+      object-fit: cover;
+      box-shadow: 0 5px 18px #17243b24;
+    }
+    .intro {
+      max-width: 60ch;
+      margin: 0 0 32px;
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 34px 0 18px;
+      color: var(--accent);
+      font-size: .82rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    h2::after { height: 1px; flex: 1; background: var(--line); content: ""; }
+    aside h2 { margin-top: 30px; }
+    .contact-list, .plain-list { margin: 0; padding: 0; list-style: none; }
+    .contact-list li { margin: 0 0 14px; overflow-wrap: anywhere; }
+    .label {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-size: .69rem;
+      font-weight: 750;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    a { color: inherit; text-decoration-color: #91b8b8; text-underline-offset: 3px; }
+    a:hover { color: var(--accent); }
+    .plain-list li { margin: 0 0 9px; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 7px; margin: 0; padding: 0; list-style: none; }
+    .tag-list li {
+      padding: 5px 9px;
+      border: 1px solid #c9dddd;
+      border-radius: 999px;
+      background: #fff;
+      color: #30575b;
+      font-size: .78rem;
+    }
+    .entry {
+      position: relative;
+      margin: 0 0 22px;
+      padding-left: 17px;
+      border-left: 2px solid var(--line);
+    }
+    .entry::before {
+      position: absolute;
+      top: 4px;
+      left: -6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      content: "";
+    }
+    .entry-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 3px 14px; }
+    h3 { margin-bottom: 3px; font-size: 1.02rem; line-height: 1.35; }
+    .date { color: var(--accent); font-size: .82rem; font-weight: 750; white-space: nowrap; }
+    .place { margin-bottom: 8px; color: var(--muted); font-size: .89rem; }
+    .entry p { margin-bottom: 0; color: #344257; }
+    .detail { margin: 7px 0 0; padding-left: 17px; color: #344257; }
+    .detail li { margin: 3px 0; }
+    .education-item { margin-bottom: 13px; }
+    .education-item:last-child { margin-bottom: 0; }
+    .education-item p { margin: 2px 0 0; color: var(--muted); font-size: .9rem; }
+    @media (max-width: 720px) {
+      body { padding: 0; }
+      .cv { display: block; min-height: 0; }
+      aside, main { padding: 30px 24px; }
+      aside { border-right: 0; border-bottom: 1px solid var(--line); }
+      .intro { font-size: 1rem; }
+      .portrait { width: 92px; height: 138px; border-radius: 11px; }
+    }
+    @page { size: A4; margin: 12mm; }
+    @media print {
+      body { padding: 0; background: #fff; font-size: 9.5pt; }
+      .cv { display: grid; grid-template-columns: 62mm minmax(0, 1fr); min-height: 0; max-width: none; box-shadow: none; }
+      aside { padding: 12mm 7mm; }
+      main { padding: 12mm 10mm; }
+      h1 { font-size: 25pt; }
+      .intro { font-size: 10pt; }
+      .portrait { width: 26mm; height: 39mm; border-radius: 3mm; box-shadow: none; }
+      h2 { margin-top: 22px; margin-bottom: 12px; }
+      a { text-decoration: none; }
+      .entry, .education-item { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <article class="cv" aria-label="Curriculum vitæ de Rayane Lebrazi">
+    <aside>
+      <img class="portrait" src="rayane-lebrazi.jpg" alt="Portrait de Rayane Lebrazi" width="185" height="277">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li><span class="label">Téléphone</span><a href="tel:+33746337767">+33 7 46 33 77 67</a></li>
+        <li><span class="label">E-mail</span><a href="mailto:rayan.brazi95@gmail.com">rayan.brazi95@gmail.com</a></li>
+        <li><span class="label">Adresse</span>Lotissement A Rioudane,<br>Hay Riad, Berkane</li>
+      </ul>
+
+      <h2>Compétences</h2>
+      <ul class="plain-list">
+        <li>Travail en équipe et collaboration</li>
+        <li>Organisation et rigueur</li>
+        <li>Communication</li>
+        <li>Gestion de plusieurs tâches</li>
+        <li>Motivation et persévérance</li>
+      </ul>
+
+      <h2>Langues</h2>
+      <ul class="tag-list" aria-label="Langues parlées">
+        <li>Arabe</li><li>Français</li><li>Anglais</li>
+      </ul>
+    </aside>
+
+    <main>
+      <header>
+        <p class="eyebrow">Étudiant en informatique</p>
+        <h1>Rayane Lebrazi</h1>
+        <p class="intro">Étudiant en 3e année à Epitech International Paris, sérieux, curieux et motivé. Je souhaite développer mes compétences académiques et pratiques grâce à de nouvelles expériences et contribuer à des projets en équipe.</p>
+      </header>
+
+      <section aria-labelledby="experiences">
+        <h2 id="experiences">Expériences et projets</h2>
+        <div class="entry">
+          <div class="entry-head"><h3>Responsable média — Caravane humanitaire</h3><span class="date">2024–2025</span></div>
+          <p class="place">Rotaract</p>
+          <p>Gestion des réseaux sociaux, création de contenu et couverture des activités. Cette expérience a renforcé mes compétences en communication, organisation et travail en équipe.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head"><h3>Projet Arduino — Feux tricolores</h3><span class="date">Projet académique</span></div>
+          <p>Réalisation en équipe d’un projet de feux tricolores. Mise en pratique de l’utilisation d’outils électriques et de la manipulation de composants électroniques.</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="education">
+        <h2 id="education">Formation</h2>
+        <div class="education-item">
+          <div class="entry-head"><h3>Cycle ingénieur en informatique — 3e année</h3><span class="date">2026–présent</span></div>
+          <p>Epitech International Paris</p>
+        </div>
+        <div class="education-item">
+          <div class="entry-head"><h3>Cycle préparatoire en informatique — 2e année</h3><span class="date">2025–2026</span></div>
+          <p>EMSI Fès</p>
+        </div>
+        <div class="education-item">
+          <div class="entry-head"><h3>Cycle préparatoire en informatique — 1re année</h3><span class="date">2024–2025</span></div>
+          <p>EMSI Fès</p>
+        </div>
+        <div class="education-item">
+          <div class="entry-head"><h3>Baccalauréat, sciences physiques</h3><span class="date">2023–2024</span></div>
+          <p>Lycée El Jil El Arabi, Berkane</p>
+        </div>
+      </section>
+    </main>
+  </article>
+</body>
+</html>

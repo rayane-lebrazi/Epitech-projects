@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rayane Lebrazi — Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.2.2/dist/css/materialize.min.css">
+</head>
+<body class="grey lighten-4">
+  <header class="teal darken-3 white-text center-align">
+    <div class="container">
+      <div class="section">
+        <h1>RAYANE LEBRAZI</h1>
+        <div class="card-panel white grey-text text-darken-3">
+          <h2>Heading</h2>
+          <p>Computer Science Student · Epitech International Paris</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section" aria-labelledby="about-title">
+      <div class="row"><div class="col s12"><h2 id="about-title" class="center-align">About me</h2></div></div>
+      <div class="row">
+        <section class="col s12 m4" aria-labelledby="story-title">
+          <h3 id="story-title" class="center-align">Story</h3>
+          <p>I am a third-year computer science student at Epitech International Paris. My studies began with two preparatory years at EMSI Fès. Through academic projects, I am building my programming knowledge and learning to work collaboratively.</p>
+          <p>I also volunteered with a Rotaract humanitarian caravan as media lead, managing social media, creating content and covering activities.</p>
+        </section>
+
+        <section class="col s12 m4" aria-labelledby="profile-title">
+          <h3 id="profile-title" class="center-align">Profile</h3>
+          <div class="card teal darken-3">
+            <div class="card-content white-text center-align">
+              <img class="circle responsive-img z-depth-2" src="assets/rayane-lebrazi.jpg" alt="Portrait of Rayane Lebrazi" width="185" height="277">
+              <p class="flow-text">Rayane Lebrazi</p>
+              <p>Computer Science Student</p>
+            </div>
+            <div class="card-action center-align">
+              <!-- Replace these placeholder profile URLs with your personal account links. -->
+              <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/your-profile/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="col s12 m4" aria-labelledby="skills-title">
+          <h3 id="skills-title" class="center-align">Skills</h3>
+          <table class="highlight responsive-table">
+            <thead><tr><th scope="col">Skill</th><th scope="col">Experience</th></tr></thead>
+            <tbody>
+              <tr class="grey lighten-3"><td>HTML</td><td>Structuring responsive web pages.</td></tr>
+              <tr><td>CSS</td><td>Practicing Flexbox and responsive layouts.</td></tr>
+              <tr class="grey lighten-3"><td>Materialize</td><td>Using the framework grid and components.</td></tr>
+              <tr><td>Arduino project</td><td>Built a traffic-light project with a team.</td></tr>
+              <tr class="grey lighten-3"><td>Social media</td><td>Managed content for Rotaract activities.</td></tr>
+              <tr><td>Teamwork</td><td>Collaborated on academic and community work.</td></tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="portfolio-title">
+      <div class="row"><div class="col s12"><h2 id="portfolio-title" class="center-align">Portfolio</h2></div></div>
+      <div class="row">
+        <div class="col s12 m4"><img class="responsive-img z-depth-1" src="assets/portfolio-web.svg" alt="Responsive web layout illustration"></div>
+        <div class="col s12 m4"><img class="responsive-img z-depth-1" src="assets/portfolio-code.svg" alt="Programming practice illustration"></div>
+        <div class="col s12 m4"><img class="responsive-img z-depth-1" src="assets/portfolio-team.svg" alt="Team and media illustration"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="projects-title">
+      <div class="row"><div class="col s12"><h2 id="projects-title" class="center-align">Last projects</h2></div></div>
+      <div class="row">
+        <div class="col s12 m4"><img class="responsive-img z-depth-1" src="assets/project-arduino.svg" alt="Arduino traffic-light project illustration"></div>
+        <div class="col s12 m4"><img class="responsive-img z-depth-1" src="assets/project-rotaract.svg" alt="Rotaract humanitarian media activity illustration"></div>
+        <div class="col s12 m4"><img class="responsive-img z-depth-1" src="assets/project-day03.svg" alt="Responsive Flexbox exercise illustration"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="contact-title">
+      <div class="row"><div class="col s12"><h2 id="contact-title" class="center-align">Contact</h2></div></div>
+      <div class="row">
+        <form class="col s12" action="#" method="get">
+          <div class="row">
+            <div class="input-field col s6"><input id="lastname" name="lastname" type="text" autocomplete="family-name"><label for="lastname">Lastname</label></div>
+            <div class="input-field col s6"><input id="firstname" name="firstname" type="text" autocomplete="given-name"><label for="firstname">Firstname</label></div>
+          </div>
+          <div class="row"><div class="input-field col s12"><input id="email" name="email" type="email" autocomplete="email"><label for="email">Email</label></div></div>
+          <div class="row"><div class="input-field col s12"><textarea id="message" name="message" class="materialize-textarea" placeholder="Your message"></textarea><label for="message">Your message</label></div></div>
+          <div class="row"><div class="col s12 center-align"><button class="btn waves-effect waves-light" type="submit">Send message</button></div></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.2.2/dist/js/materialize.min.js"></script>
+</body>
+</html>

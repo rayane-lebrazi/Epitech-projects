@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="title">
+  <title id="title">Programming practice</title>
+  <rect width="800" height="460" fill="#182b49"/>
+  <rect x="95" y="65" width="610" height="330" rx="20" fill="#243c61"/>
+  <rect x="135" y="110" width="530" height="238" rx="10" fill="#101b2e"/>
+  <path d="m270 185-55 44 55 44M530 185l55 44-55 44M455 163l-80 132" fill="none" stroke="#67d6c1" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="153" cy="85" r="8" fill="#f5c85c"/><circle cx="178" cy="85" r="8" fill="#f28b82"/><circle cx="203" cy="85" r="8" fill="#8fd4bc"/>
+</svg>

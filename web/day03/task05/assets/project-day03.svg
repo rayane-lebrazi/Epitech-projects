@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="title">
+  <title id="title">Responsive Flexbox exercise</title>
+  <rect width="800" height="460" fill="#f4edf8"/>
+  <rect x="108" y="90" width="584" height="280" rx="20" fill="#fff"/>
+  <rect x="132" y="114" width="238" height="58" rx="8" fill="#67b3dd"/>
+  <rect x="132" y="190" width="536" height="70" rx="8" fill="#9ee062"/>
+  <rect x="132" y="278" width="164" height="68" rx="8" fill="#fedf6b"/><rect x="318" y="278" width="164" height="68" rx="8" fill="#6b2683"/><rect x="504" y="278" width="164" height="68" rx="8" fill="#f03db5"/>
+</svg>

@@ -1,11 +1,68 @@
-* { box-sizing: border-box; }
-body { margin: 0; padding: 40px 18px; background: #f4f6f8; color: #20252b; font: 16px/1.5 system-ui, sans-serif; }
-main { width: min(620px, 100%); margin: auto; }
-form { display: grid; gap: 10px; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 8px 30px #10182012; }
-input, select, button { min-height: 42px; padding: 9px 11px; font: inherit; border: 1px solid #cbd2d9; border-radius: 6px; }
-button { cursor: pointer; background: #20252b; color: white; border: 0; }
-ul { list-style: none; padding: 0; }
-li { margin: 10px 0; padding: 12px 14px; background: white; border: 2px solid; border-radius: 7px; overflow-wrap: anywhere; }
-.note { border-color: blue; }
-.email { border-color: green; }
-.todo { border-color: red; }
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 18px;
+    background: #f4f6f8;
+    color: #20252b;
+    font: 16px/1.5 system-ui, sans-serif;
+}
+
+main {
+    width: min(620px, 100%);
+    margin: auto;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px #10182012;
+}
+
+input,
+select,
+button {
+    min-height: 42px;
+    padding: 9px 11px;
+    font: inherit;
+    border: 1px solid #cbd2d9;
+    border-radius: 6px;
+}
+
+button {
+    cursor: pointer;
+    background: #20252b;
+    color: white;
+    border: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 12px 14px;
+    background: white;
+    border: 2px solid;
+    border-radius: 7px;
+    overflow-wrap: anywhere;
+}
+
+.note {
+    border-color: blue;
+}
+
+.email {
+    border-color: green;
+}
+
+.todo {
+    border-color: red;
+}

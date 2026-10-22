@@ -1,0 +1,26 @@
+:root {
+    color-scheme: light;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+* { box-sizing: border-box; }
+body { max-width: 900px; margin: 32px auto; padding: 0 20px; line-height: 1.5; }
+h1 { margin: 0; font-size: 1.8rem; }
+.page-header p { margin: 4px 0 24px; color: #555; }
+.run-help { padding: 12px; background: #f3f4f6; border: 1px solid #ddd; }
+code { padding: 2px 4px; background: #e8e8e8; }
+a { color: #0645ad; }
+a:hover { text-decoration-thickness: 2px; }
+.day-section { padding: 14px 0 18px; border-bottom: 1px solid #ddd; }
+h2 { margin: 0 0 8px; font-size: 1.2rem; }
+ul { margin: 0; padding-left: 24px; }
+li { padding: 3px 0; }
+li span { display: inline-block; min-width: 95px; font-weight: bold; }
+li a + a { margin-left: 10px; }
+.muted { color: #666; }
+@media (max-width: 520px) {
+    body { margin-top: 20px; padding: 0 14px; }
+    li span { min-width: 78px; }
+}

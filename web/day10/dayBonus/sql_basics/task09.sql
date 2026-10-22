@@ -1,0 +1,1 @@
+SELECT COUNT(*) AS "Number of 'western' movies" FROM movies AS m JOIN genres AS g ON g.id = m.genre_id JOIN producers AS p ON p.id = m.producer_id WHERE LOWER(g.name) = 'western' AND LOWER(p.name) IN ('tartan movies', 'lionsgate uk');

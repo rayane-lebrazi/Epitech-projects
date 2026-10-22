@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 04 — Brand validation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+  <main class="container py-5">
+    <a class="btn btn-sm btn-outline-secondary mb-4" href="../index.html">Day 10 tasks</a>
+    <h1 class="mb-3">Task 04 — Brand validation</h1><p>Type and brand are checked as you edit them. The server checks the database once both inputs are syntactically valid.</p><form id="brand-form" class="row g-3" novalidate><div class="col-md-6"><label class="form-label" for="type">Type</label><input class="form-control" id="type" name="type" autocomplete="off"><p id="type-message" class="form-text text-danger" aria-live="polite">No types sent yet!</p></div><div class="col-md-6"><label class="form-label" for="brand">Brand</label><input class="form-control" id="brand" name="brand" autocomplete="off"><p id="brand-message" class="form-text text-danger" aria-live="polite">No brands sent yet!</p></div></form><p id="request-status" role="status"></p>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+  <script src="task04.js"></script>
+</body>
+</html>
