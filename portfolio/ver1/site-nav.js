@@ -6,9 +6,10 @@
   header.querySelector('.brand')?.remove();
   const currentFile = location.pathname.split('/').pop() || 'index.html';
   const items = [
-    { key: 'about', label: 'About me', href: './index.html#about' },
-    { key: 'career', label: 'Academics', href: './index.html#career' },
-    { key: 'skills', label: 'Skills', href: './index.html#skills' },
+    { key: 'home', label: 'Home', href: './home.html' },
+    { key: 'about', label: 'About me', href: './about.html' },
+    { key: 'career', label: 'Academics', href: './home.html#career' },
+    { key: 'skills', label: 'Skills', href: './home.html#skills' },
     { key: 'contact', label: 'Contact me', href: './contact.html' },
     { key: 'cv', label: 'My CV', href: './CV.pdf', target: '_blank' }
   ];
@@ -43,8 +44,8 @@
     link.textContent = (heading?.textContent || section.getAttribute('aria-label') || section.id).trim();
     panel.append(link);
   }
-  if (currentFile !== 'index.html') {
-    for (const item of items.slice(1, 3)) {
+  if (currentFile !== 'home.html' && currentFile !== 'index.html') {
+    for (const item of items.slice(2, 4)) {
       const link = document.createElement('a');
       link.className = 'site-map-link';
       link.href = item.href;
@@ -79,9 +80,9 @@
   };
 
   const updateActiveLink = () => {
-    let activeKey = currentFile === 'contact.html' ? 'contact' : 'about';
-    if (currentFile === 'index.html') {
-      const threshold = header.getBoundingClientRect().bottom + 60;
+    let activeKey = currentFile === 'contact.html' ? 'contact' : currentFile === 'about.html' ? 'about' : 'home';
+    if (currentFile === 'home.html' || currentFile === 'index.html') {
+      const threshold = header.getBoundingClientRect().bottom + 140;
       const academics = document.getElementById('career');
       const skills = document.getElementById('skills');
       if (academics && academics.getBoundingClientRect().top <= threshold) activeKey = 'career';
