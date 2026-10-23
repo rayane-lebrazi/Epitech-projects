@@ -2624,8 +2624,16 @@ html, body { width: 100%; max-width: 100%; overflow-x: clip; overscroll-behavior
 body { touch-action: pan-y; }
 
 
-.language-section {
+.language-subsection {
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--line);
     background: radial-gradient(ellipse at 8% 80%, rgba(138, 226, 52, .12), transparent 42%), #211a2c
+}
+
+.language-subsection h2 {
+    margin: 0 0 1rem;
+    font-size: clamp(1.6rem, 3vw, 2.3rem)
 }
 
 .language-list {

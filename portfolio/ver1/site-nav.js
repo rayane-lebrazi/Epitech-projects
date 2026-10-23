@@ -85,10 +85,8 @@
       const threshold = header.getBoundingClientRect().bottom + 140;
       const academics = document.getElementById('career');
       const skills = document.getElementById('skills');
-      const languages = document.getElementById('languages');
       if (academics && academics.getBoundingClientRect().top <= threshold) activeKey = 'career';
       if (skills && skills.getBoundingClientRect().top <= threshold) activeKey = 'skills';
-      if (languages && languages.getBoundingClientRect().top <= threshold) activeKey = 'languages';
     }
     paintActiveLink(activeKey);
   };
@@ -121,7 +119,7 @@
     }
   }, { passive: true });
   window.addEventListener('hashchange', () => {
-    const key = location.hash === '#career' ? 'career' : location.hash === '#skills' ? 'skills' : location.hash === '#languages' ? 'languages' : null;
+    const key = location.hash === '#career' ? 'career' : location.hash === '#skills' ? 'skills' : null;
     if (key) paintActiveLink(key); else updateActiveLink();
   });
   nav.addEventListener('click', event => {
@@ -131,6 +129,5 @@
   header.classList.toggle('has-scrolled', window.scrollY > 30);
   if (location.hash === '#career') paintActiveLink('career');
   else if (location.hash === '#skills') paintActiveLink('skills');
-  else if (location.hash === '#languages') paintActiveLink('languages');
   else updateActiveLink();
 })();
