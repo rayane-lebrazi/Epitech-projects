@@ -2558,58 +2558,7 @@ footer>a:last-child {
     padding: 0
 }
 
-.skills-list li {
-    display: flex;
-    min-width: 0;
-    flex-direction: column;
-    align-items: stretch;
-    gap: .7rem;
-    padding: 1rem;
-    background: linear-gradient(145deg, rgba(45, 35, 58, .95), rgba(23, 18, 31, .92));
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    color: var(--ink)
-}
-
-.skill-card-heading {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: .5rem
-}
-
-.skill-name {
-    font-weight: 800
-}
-
-.skill-score {
-    color: var(--orange);
-    font: 500 .76rem 'DM Mono', monospace;
-    white-space: nowrap
-}
-
-.skill-meter {
-    height: 9px;
-    overflow: hidden;
-    background: #100d16;
-    border: 1px solid var(--line);
-    border-radius: 999px
-}
-
-.skill-meter span {
-    display: block;
-    height: 100%;
-    border-radius: inherit;
-    background: linear-gradient(90deg, var(--purple), var(--orange), var(--green));
-    box-shadow: 0 0 12px rgba(138, 226, 52, .28)
-}
-
-.skill-level {
-    color: var(--green);
-    font: 500 .68rem 'DM Mono', monospace;
-    letter-spacing: .08em;
-    text-transform: uppercase
-}
+.skills-list li { display:flex; min-width:0; flex-direction:column; align-items:stretch; gap:.7rem; padding:1rem; background:linear-gradient(145deg, rgba(45,35,58,.95), rgba(23,18,31,.92)); border:1px solid var(--line); border-radius:8px; color:var(--ink) } .skill-card-heading { display:flex; align-items:baseline; justify-content:space-between; gap:.5rem } .skill-name { font-weight:800 } .skill-score { color:var(--orange); font:500 .76rem 'DM Mono', monospace; white-space:nowrap } .skill-meter { height:9px; overflow:hidden; background:#100d16; border:1px solid var(--line); border-radius:999px } .skill-meter span { display:block; height:100%; border-radius:inherit; background:linear-gradient(90deg, var(--purple), var(--orange), var(--green)); box-shadow:0 0 12px rgba(138,226,52,.28) } .skill-level { color:var(--green); font:500 .68rem 'DM Mono', monospace; letter-spacing:.08em; text-transform:uppercase }
 
 .site-header nav>a.active {
     color: var(--ink)
