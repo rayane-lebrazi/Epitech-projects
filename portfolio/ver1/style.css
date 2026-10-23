@@ -2622,3 +2622,42 @@ video {
 
 html, body { width: 100%; max-width: 100%; overflow-x: clip; overscroll-behavior-x: none; }
 body { touch-action: pan-y; }
+
+
+.language-section {
+    background: radial-gradient(ellipse at 8% 80%, rgba(138, 226, 52, .12), transparent 42%), #211a2c
+}
+
+.language-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+}
+
+.language-meter {
+    overflow: visible
+}
+
+.language-meter > span {
+    position: relative
+}
+
+.native-language {
+    position: relative;
+    z-index: 1
+}
+
+.native-language .language-meter > .native-xp {
+    width: 105%;
+    max-width: none;
+    background: linear-gradient(90deg, var(--green), #d7ff9e);
+    box-shadow: 0 0 10px rgba(138, 226, 52, .8), 0 0 25px rgba(138, 226, 52, .55), 12px 0 34px rgba(138, 226, 52, .45);
+    animation: native-xp-pulse 2.2s ease-in-out infinite alternate
+}
+
+@keyframes native-xp-pulse {
+    from { filter: brightness(1); }
+    to { filter: brightness(1.45); }
+}
+
+@media (max-width: 800px) {
+    .language-list { grid-template-columns: 1fr; }
+}
