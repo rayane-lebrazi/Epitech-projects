@@ -2618,4 +2618,7 @@ video {
         font-size: clamp(.5rem, 2.2vw, .62rem);
         line-height: 1.35
     }
-}
+
+body { touch-action: pan-y; }
+html, body { width: 100%; max-width: 100%; overflow-x: hidden; overscroll-behavior-x: none; }
+body { touch-action: pan-y; }
