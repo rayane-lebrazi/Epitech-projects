@@ -81,7 +81,7 @@
   const updateActiveLink = () => {
     let activeKey = currentFile === 'contact.html' ? 'contact' : 'about';
     if (currentFile === 'index.html') {
-      const threshold = header.getBoundingClientRect().bottom + 60;
+      const threshold = header.getBoundingClientRect().bottom + 100;
       const academics = document.getElementById('career');
       const skills = document.getElementById('skills');
       if (academics && academics.getBoundingClientRect().top <= threshold) activeKey = 'career';
