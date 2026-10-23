@@ -10,7 +10,6 @@
     { key: 'about', label: 'About me', href: './about.html' },
     { key: 'career', label: 'Academics', href: './home.html#career' },
     { key: 'skills', label: 'Skills', href: './home.html#skills' },
-    { key: 'languages', label: 'Languages', href: './home.html#languages' },
     { key: 'contact', label: 'Contact me', href: './contact.html' },
     { key: 'cv', label: 'My CV', href: './CV.pdf', target: '_blank' }
   ];
