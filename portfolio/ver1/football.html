@@ -3,11 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Rayane's football page and free-kick game.">
+  <meta name="description" content="Rayane's football page and match-day photos.">
   <title>Football | Rayane Lebrazi</title>
-  <link rel="stylesheet" href="./style.css?v=skills-languages-2">
-  <script src="./activities.js" defer></script>
-  <script src="./site-nav.js?v=skills-languages-2" defer></script>
+  <link rel="stylesheet" href="./style.css?v=no-games-1">
+    <script src="./site-nav.js?v=no-games-1" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -25,7 +24,7 @@
     <a class="back-link" href="./about.html#story">← Back to Play. Build. Repeat.</a>
     <p class="eyebrow">On the pitch</p>
     <h1 class="activity-title">Football<span>.</span></h1>
-    <p class="activity-intro">A little space for my game, with a free kick to take while you’re here.</p>
+    <p class="activity-intro">A few moments from the pitch and one of my favourite team sports.</p>
 
     <section class="football-feature" id="football-photo">
       <figure class="football-photo-slot">
@@ -34,7 +33,7 @@
       </figure>
       <div class="football-caption">
         <p class="eyebrow">Match day</p>
-        <h2>Good games are built on good teamwork.</h2>
+        <h2>Football is built on good teamwork.</h2>
         <p>Football is one of my favorite ways to compete, think quickly, and have fun with a team.</p>
       </div>
     </section>
@@ -46,26 +45,7 @@
       </figure>
     </section>
 
-    <section class="game-panel" id="free-kick">
-      <p class="eyebrow">Mini game · Free kick</p>
-      <h2>Beat the wall. Find the net.</h2>
-      <p>Choose where to aim, then take your shot. The keeper moves every time.</p>
 
-      <div class="football-pitch" aria-label="Football free kick game">
-        <div class="goal">
-          <div class="goal-net"></div>
-          <div class="keeper" id="keeper"></div>
-        </div>
-        <div class="wall"><span></span><span></span><span></span></div>
-        <div class="ball" id="football-ball">⚽</div>
-      </div>
-
-      <label class="game-label" for="football-aim">Aim across the goal</label>
-      <input id="football-aim" class="game-range" type="range" min="0" max="100" value="50">
-      <button class="game-button" id="football-shoot" type="button">Take the shot</button>
-      <p class="game-result" id="football-result" aria-live="polite">Ready when you are.</p>
-      <p class="game-score">Goals <strong id="football-score">0</strong> <span>·</span> Shots <strong id="football-shots">0</strong></p>
-    </section>
   </main>
 
   <footer>
