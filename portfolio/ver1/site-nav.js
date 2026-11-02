@@ -9,7 +9,7 @@
     { key: 'home', label: 'Home', href: './home.html' },
     { key: 'career', label: 'Academics', href: './home.html#career' },
     { key: 'skills', label: 'Skills', href: './home.html#skills' },
-    { key: 'about', label: 'About me', href: './about.html' },
+    { key: 'about', label: 'About me', href: './about.html#story' },
     { key: 'contact', label: 'Contact me', href: './contact.html' },
     { key: 'cv', label: 'My CV', href: './CV.pdf', target: '_blank' }
   ];
