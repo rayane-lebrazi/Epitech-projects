@@ -665,6 +665,13 @@ footer>a:last-child {
 }
 
 .football-caption h2,
+.media-drop h2 {
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: -.05em;
+    margin-bottom: .5rem
+}
+
 .terminal-window {
     overflow: hidden;
     border: 1px solid #4d3b60;
@@ -858,7 +865,6 @@ footer>a:last-child {
     margin-bottom: 1.5rem;
     background: rgba(111, 66, 193, .08)
 }
-.football-caption p:last-child,
 .media-drop p:last-child {
     margin: 0
 }
@@ -868,219 +874,14 @@ footer>a:last-child {
 .media-drop h2 {
     font-size: 2rem;
     line-height: 1.1;
-    letter-spacing: -.05em
-}
-
-.football-caption p:last-child,
-.media-drop p:last-child {
-    color: var(--muted)
-}
-
-.terminal-window {
-    overflow: hidden;
-    border: 1px solid #4d3b60;
-    border-radius: 10px;
-    background: #100d16;
-    box-shadow: 0 18px 60px rgba(0, 0, 0, .25)
-}
-
-.terminal-top {
-    height: 45px;
-    padding: 0 1rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    background: #2b2234;
-    border-bottom: 1px solid #4d3b60;
-    color: #cfc3df;
-    font: .72rem 'DM Mono', monospace
-}
-
-.terminal-lights {
-    display: flex;
-    gap: 6px
-}
-
-.terminal-lights i {
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background: #e95420
-}
-
-.terminal-lights i:nth-child(2) { background: #f3bd32 }
-.terminal-lights i:nth-child(3) { background: #8ae234 }
-
-.terminal-body { padding: 1.5rem }
-
-.terminal-body>p:first-child {
-    font: .8rem 'DM Mono', monospace;
-    color: #e9e1f2
-}
-
-.terminal-prompt { color: var(--green) }
-
-.terminal-body label {
-    display: block;
-    color: var(--muted);
-    font-size: .8rem;
-    margin: 1.5rem 0 .5rem
-}
-
-.terminal-body textarea {
-    width: 100%;
-    min-height: 240px;
-    resize: vertical;
-    padding: 1rem;
-    border: 1px solid #493b59;
-    border-radius: 5px;
-    background: #17121f;
-    color: #f4f0fa;
-    font: .9rem/1.6 'DM Mono', monospace
-}
-
-.terminal-body textarea:focus { outline: 2px solid var(--purple) }
-
-.writing-actions {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem
-}
-
-.writing-actions span {
-    color: var(--muted);
-    font-size: .75rem
-}
-
-.text-button {
-    border: 0;
-    background: none;
-    color: var(--muted);
-    font: 700 .85rem 'Manrope', Arial, sans-serif;
-    cursor: pointer
-}
-
-.writing-footnote {
-    color: var(--muted);
-    font-size: .8rem;
-    margin-top: 1rem
-}
-
-.workshop-page { max-width: 1150px }
-
-.workshop-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin: 2rem 0 3rem
-}
-
-.workshop-card {
-    padding: 1rem;
-    border: 1px solid var(--line);
-    border-radius: 9px;
-    background: var(--surface)
-}
-
-.workshop-visual {
-    height: 190px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin: 0 0 .5rem;
-    border-radius: 6px;
-    background: radial-gradient(circle at 50% 50%, #453054, #1a1422 70%);
-    color: var(--green)
-}
-
-.workshop-visual img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover
-}
-
-.workshop-visual figcaption {
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
-    padding: .25rem .45rem;
-    background: rgba(16, 13, 22, .82);
-    color: var(--green);
-    font: .65rem 'DM Mono', monospace
-}
-
-.workshop-visual:before,
-.workshop-visual:after {
-    content: '';
-    position: absolute;
-    border: 1px solid rgba(138, 226, 52, .22);
-    border-radius: 50%;
-    width: 150px;
-    height: 150px
-}
-
-.workshop-visual:after { width: 220px; height: 220px }
-
-.workshop-visual span {
-    position: absolute;
-    left: 14px;
-    top: 12px;
-    font: .7rem 'DM Mono', monospace;
-    color: var(--orange)
-}
-
-.workshop-visual strong {
-    z-index: 1;
-    font: 700 .85rem/1.5 'DM Mono', monospace;
-    letter-spacing: .1em;
-    text-align: center
-}
-
-.workshop-visual i {
-    position: absolute;
-    right: 14px;
-    bottom: 10px;
-    font-size: 2rem;
-    font-style: normal;
-    color: var(--orange)
-}
-
-.tools-visual { background: radial-gradient(circle at 50% 50%, #463122, #1a1422 70%) }
-.electric-visual { background: radial-gradient(circle at 50% 50%, #293d41, #1a1422 70%) }
-
-.workshop-card h2 {
-    font-size: 1.05rem;
-    margin: 1rem 0 .3rem
-}
-
-.workshop-card p {
-    color: var(--muted);
-    font-size: .8rem;
-    margin: 0
-}
-
-.media-drop {
-    padding: 2rem;
-    border: 1px dashed #806b96;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
-    background: rgba(111, 66, 193, .08)
-}
-.football-caption p:last-child,
-.media-drop p:last-child {
-    color: var(--muted)
-}
-.media-drop h2 {
+    letter-spacing: -.05em;
     margin-bottom: .5rem
 }
 
+.football-caption p:last-child,
 .media-drop p:last-child {
-    margin: 0
+    color: var(--muted)
 }
-
 
 @media(max-width:700px) {
     .activity-links {
