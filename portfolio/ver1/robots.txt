@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rayane-lebrazi.github.io/Epitech-projects/sitemap.xml
