@@ -15,17 +15,6 @@ document.querySelectorAll(".video-fullscreen-button").forEach(button => {
     }
   });
 });
-const footballActionPhoto = document.querySelector("#football-action-photo");
-if (footballActionPhoto) {
-  const showFootballPhoto = () => {
-    if (footballActionPhoto.naturalWidth > 0) {
-      footballActionPhoto.hidden = false;
-      document.querySelector("#football-photo-placeholder").hidden = true;
-    }
-  };
-  footballActionPhoto.addEventListener("load", showFootballPhoto);
-  showFootballPhoto();
-}
 const note = document.querySelector("#writing-note");
 if (note) {
   const status = document.querySelector("#note-status");
