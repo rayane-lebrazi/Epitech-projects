@@ -17,8 +17,8 @@
   <meta name="twitter:title" content="Football | Rayane Lebrazi">
   <meta name="twitter:description" content="See Rayane Lebrazi&#x27;s football photos and read about his interest in teamwork and the game.">
   <meta name="twitter:image" content="https://rayane-lebrazi.github.io/Epitech-projects/assets/images/rayane-photo.png">
-  <link rel="stylesheet" href="./style.css?v=midnight-horizon-1">
-    <script src="./site-nav.js?v=nav-order-2" defer></script>
+  <link rel="stylesheet" href="./style.css?v=midnight-horizon-effects-1">
+    <script src="./site-nav.js?v=motion-effects-1" defer></script>
 </head>
 <body>
   <div class="aura-layer aura-layer-1"></div>
@@ -53,11 +53,30 @@
       </div>
     </section>
 
-    <section class="football-gallery" aria-label="More football photos">
-      <figure>
-        <img src="./assets/images/football-main.jpeg" alt="Rayane on the football pitch, seen from behind">
-        <figcaption>On the pitch</figcaption>
-      </figure>
+    <section class="football-gallery orbit-gallery" aria-label="Football photo orbit">
+      <p class="eyebrow">Match day memories</p>
+      <h2 class="orbit-gallery-heading">A few moments on the pitch<span>.</span></h2>
+      <p class="orbit-hint">Drag the photos to spin the orbit, or select one to bring it forward.</p>
+      <div class="orbit-stage" role="group" aria-label="Interactive orbit of football photos">
+        <button class="orbit-item" type="button" aria-label="Bring the football action photo forward">
+          <span class="orbit-item-inner"><img src="./assets/images/football-action.jpeg" alt="" loading="lazy" decoding="async"><span class="orbit-caption">Match day</span></span>
+        </button>
+        <button class="orbit-item" type="button" aria-label="Bring the football pitch photo forward">
+          <span class="orbit-item-inner"><img src="./assets/images/football-main.jpeg" alt="" loading="lazy" decoding="async"><span class="orbit-caption">On the pitch</span></span>
+        </button>
+        <button class="orbit-item" type="button" aria-label="Bring the football action photo forward">
+          <span class="orbit-item-inner"><img src="./assets/images/football-action.jpeg" alt="" loading="lazy" decoding="async"><span class="orbit-caption">Football</span></span>
+        </button>
+        <button class="orbit-item" type="button" aria-label="Bring the football pitch photo forward">
+          <span class="orbit-item-inner"><img src="./assets/images/football-main.jpeg" alt="" loading="lazy" decoding="async"><span class="orbit-caption">Team play</span></span>
+        </button>
+        <button class="orbit-item" type="button" aria-label="Bring the football action photo forward">
+          <span class="orbit-item-inner"><img src="./assets/images/football-action.jpeg" alt="" loading="lazy" decoding="async"><span class="orbit-caption">Match day</span></span>
+        </button>
+        <button class="orbit-item" type="button" aria-label="Bring the football pitch photo forward">
+          <span class="orbit-item-inner"><img src="./assets/images/football-main.jpeg" alt="" loading="lazy" decoding="async"><span class="orbit-caption">On the pitch</span></span>
+        </button>
+      </div>
     </section>
 
 
