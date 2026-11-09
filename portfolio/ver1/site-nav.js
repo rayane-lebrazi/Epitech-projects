@@ -258,7 +258,7 @@
       const firstRect = orbitItems[0]?.getBoundingClientRect();
       if (!rect.width || !rect.height || !firstRect) return;
       const radiusX = Math.max(0, Math.min(rect.width * .42, (rect.width - firstRect.width) / 2 - 8));
-      const radiusY = Math.max(0, Math.min(rect.height * .25, (rect.height - firstRect.height) / 2 - 8));
+      const radiusY = Math.max(0, Math.min(rect.height * .34, (rect.height - firstRect.height) / 2 - 8));
       const tilt = -8 * Math.PI / 180;
       const cosTilt = Math.cos(tilt);
       const sinTilt = Math.sin(tilt);
@@ -269,7 +269,7 @@
         const x = ellipseX * cosTilt - ellipseY * sinTilt;
         const y = ellipseX * sinTilt + ellipseY * cosTilt;
         const depth = Math.sin(point);
-        const scale = .78 + (depth + 1) * .16;
+        const scale = .86 + (depth + 1) * .12;
         item.style.transform = 'translate3d(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px,0) translate(-50%,-50%) scale(' + scale.toFixed(3) + ')';
         item.style.opacity = (.62 + (depth + 1) * .19).toFixed(3);
         item.style.filter = 'brightness(' + (.72 + (depth + 1) * .14).toFixed(3) + ')';
