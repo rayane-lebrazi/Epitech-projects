@@ -4080,7 +4080,10 @@ footer {
 
 @media (min-width: 701px) {
     .site-header nav {
-        top: calc(50% - 5px)
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%)
     }
 }
 
