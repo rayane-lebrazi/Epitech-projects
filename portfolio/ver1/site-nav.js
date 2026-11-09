@@ -11,7 +11,7 @@
     { key: 'skills', label: 'Skills', href: './home.html#skills' },
     { key: 'about', label: 'About me', href: './about.html#story' },
     { key: 'contact', label: 'Contact me', href: './contact.html' },
-    { key: 'cv', label: 'My CV', href: './CV.pdf', target: '_blank' }
+    { key: 'cv', label: 'My CV', href: './assets/documents/CV.pdf', target: '_blank' }
   ];
   nav.replaceChildren();
 
