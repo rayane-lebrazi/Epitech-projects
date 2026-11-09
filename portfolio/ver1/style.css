@@ -2869,3 +2869,10 @@ body > * {
         filter: blur(130px)
     }
 }
+
+.hero::before,
+.hero::after {
+    content: none;
+    display: none;
+    animation: none
+}
