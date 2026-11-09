@@ -4190,3 +4190,15 @@ footer {
         margin-bottom: .25rem
     }
 }
+
+
+@media (max-width: 1050px) and (min-width: 701px) {
+    .site-header nav {
+        gap: .55rem
+    }
+
+    .site-header nav > a {
+        padding: .36rem .5rem;
+        font-size: .82rem
+    }
+}
