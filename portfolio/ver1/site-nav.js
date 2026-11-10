@@ -152,13 +152,12 @@
 
   let scrollFrame = 0;
   window.addEventListener('scroll', () => {
-    header.classList.toggle('has-scrolled', window.scrollY > 30);
-    if (!scrollFrame) {
-      scrollFrame = requestAnimationFrame(() => {
-        updateActiveLink();
-        scrollFrame = 0;
-      });
-    }
+    if (scrollFrame) return;
+    scrollFrame = requestAnimationFrame(() => {
+      header.classList.toggle('has-scrolled', window.scrollY > 30);
+      updateActiveLink();
+      scrollFrame = 0;
+    });
   }, { passive: true });
   window.addEventListener('hashchange', () => {
     const key = location.hash === '#career' ? 'career' : location.hash === '#skills' ? 'skills' : null;
@@ -234,7 +233,11 @@
     specularTargets.forEach(target => target.style.setProperty('--specular-opacity', '.22'));
     sectionGlows.forEach(overlay => overlay.style.setProperty('--section-glow-opacity', '0'));
   });
-  window.addEventListener('scroll', () => schedulePointerEffects(), { passive: true });
+  let pointerEffectsScrollTimer = 0;
+  window.addEventListener('scroll', () => {
+    window.clearTimeout(pointerEffectsScrollTimer);
+    pointerEffectsScrollTimer = window.setTimeout(() => schedulePointerEffects(), 120);
+  }, { passive: true });
 
   const orbitStage = document.querySelector('.orbit-stage');
   if (orbitStage) {
