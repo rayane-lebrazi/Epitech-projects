@@ -389,4 +389,24 @@
     schedulePointerEffects();
   });
 
+
+  const revealSections = Array.from(document.querySelectorAll('main section'));
+  if ('IntersectionObserver' in window) {
+    const sectionRevealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          sectionRevealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -36px 0px' });
+
+    revealSections.forEach(section => {
+      section.classList.add('scroll-reveal');
+      sectionRevealObserver.observe(section);
+    });
+  } else {
+    revealSections.forEach(section => section.classList.add('is-revealed'));
+  }
+
 })();
